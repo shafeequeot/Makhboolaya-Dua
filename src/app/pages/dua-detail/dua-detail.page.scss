@@ -1,0 +1,39 @@
+[page-dua-detail-content]{
+	--background: url("../../../assets/images/background/bg-03.png") no-repeat center center / cover;
+}
+
+	ion-card {
+		--background: #fff;
+		opacity:0.8;
+      margin:4px;
+    
+	}
+
+ion-card-header{
+font-size: 12pt;
+  font-weight: 800;
+  text-align: center;
+  background: #f4f7dd;
+  color: rgb(0,100,70);
+}
+
+.DivArabi{
+
+ text-align: right;
+  direction: rtl;
+   font-family: 'adobe arabic', serif;
+   font-weight: 600;
+  font-size: 21px;
+}
+
+.DivMlm{
+ //padding:4px;
+  font-size: 12pt;
+}
+
+ion-card-content{
+    padding: 14px 6px 14px 6px;
+border-bottom: 1px solid #D3D3D3;
+}
+
+

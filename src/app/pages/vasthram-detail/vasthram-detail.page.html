@@ -1,0 +1,57 @@
+
+<ion-header page-vasthram-detail-header class="page-vasthram-detail-header">
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+			<ion-back-button></ion-back-button>
+		</ion-buttons>
+		<ion-title>Detail</ion-title>
+		<ion-buttons slot="end">
+			<ion-button (click)="showPopover($event)"><ion-icon name="ellipsis-vertical-outline"></ion-icon></ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content page-vasthram-detail-content class="page-vasthram-detail-content " >
+	
+	<ion-refresher (ionRefresh)="doRefresh($event)" slot="fixed">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	
+	
+	<ion-card *ngIf="dataVasthram">
+      <ion-card-header color="primary"> {{ dataVasthram.heading }} </ion-card-header>
+      
+      <ion-card-content class="DivArabi">
+		{{ dataVasthram.arabi_text1 }} </ion-card-content>
+      
+      <ion-card-content class="DivMlm">
+		{{ dataVasthram.malayalam1 }} </ion-card-content>
+      
+       <ion-card-content class="DivArabi" *ngIf="dataVasthram.arabi_text2">
+				{{ dataVasthram.arabi_text2 }} </ion-card-content>
+      
+<ion-card-content class="DivMlm DivSeprator" *ngIf="dataVasthram.malayalam2">
+  {{ dataVasthram.malayalam2 }} </ion-card-content>
+       
+		<ion-card-content class="DivArabi" *ngIf="dataVasthram.arabi_text3">
+          {{ dataVasthram.arabi_text3 }} </ion-card-content>
+      
+	<ion-card-content class="DivMlm DivSeprator" *ngIf="dataVasthram.arabi_text3">
+      {{ dataVasthram.malayalam3 }}</ion-card-content>
+    
+	<ion-card-content class="DivArabi" *ngIf="dataVasthram.arabi_text4">
+      {{ dataVasthram.arabi_text4 }}</ion-card-content>
+      
+	<ion-card-content class="DivMlm DivSeprator" *ngIf="dataVasthram.malayalam4"> 
+      {{ dataVasthram.malayalam4 }} </ion-card-content>
+      
+	<ion-card-content class="DivArabi" *ngIf="dataVasthram.arabi_text5">
+      {{ dataVasthram.arabi_text5 }} </ion-card-content>
+      
+	<ion-card-content class="DivMlm" *ngIf="dataVasthram.malayalam5"> 	
+      {{ dataVasthram.malayalam5 }} </ion-card-content>
+	</ion-card>
+
+</ion-content>

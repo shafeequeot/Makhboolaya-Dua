@@ -1,0 +1,55 @@
+
+<ion-header page-dua-detail-header class="page-dua-detail-header">
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+			<ion-back-button></ion-back-button>
+		</ion-buttons>
+		<ion-title>Detail</ion-title>
+		<ion-buttons slot="end">
+			<ion-button (click)="showPopover($event)"><ion-icon name="ellipsis-vertical-outline"></ion-icon></ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content page-dua-detail-content class="page-dua-detail-content " >
+	
+	<ion-refresher (ionRefresh)="doRefresh($event)" slot="fixed">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	
+	
+	<ion-card *ngIf="dataDua">
+	<ion-card-header>	{{ dataDua.heading }} </ion-card-header>
+	<ion-card-content class="DivArabi" *ngIf="dataDua.arabic1">	{{ dataDua.arabic1 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam1">	{{ dataDua.malayalam1 }} </ion-card-content>
+	<ion-card-content class="DivArabi" *ngIf="dataDua.arabic2">	{{ dataDua.arabic2 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam2">	{{ dataDua.malayalam2 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic3">	{{ dataDua.arabic3 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam3">	{{ dataDua.malayalam3 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic4">	{{ dataDua.arabic4 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam4">	{{ dataDua.malayalam4 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic5">	{{ dataDua.arabic5 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam5">	{{ dataDua.malayalam5 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic6">	{{ dataDua.arabic6 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam6">	{{ dataDua.malayalam6 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic7">	{{ dataDua.arabic7 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam7">	{{ dataDua.malayalam7 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic8">	{{ dataDua.arabic8 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam8">	{{ dataDua.malayalam8 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic9">	{{ dataDua.arabic9 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam9">	{{ dataDua.malayalam9 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic10">	{{ dataDua.arabic10 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam10">	{{ dataDua.malayalam10}} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic11">	{{ dataDua.arabic11 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam11">	{{ dataDua.malayalam11 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic12">	{{ dataDua.arabic12 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam12">	{{ dataDua.malayalam12 }} </ion-card-content>
+      <ion-card-content class="DivArabi" *ngIf="dataDua.arabic13">	{{ dataDua.arabic13 }} </ion-card-content>
+     <ion-card-content class="DivMlm" *ngIf="dataDua.malayalam13">	{{ dataDua.malayalam13 }} </ion-card-content>
+      
+    
+	</ion-card>
+
+</ion-content>

@@ -1,0 +1,51 @@
+
+<ion-header page-home-header class="page-home-header">
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>ദുഃആകള്‍</ion-title>
+		<ion-buttons slot="end">
+			<ion-button (click)="showPopover($event)"><ion-icon name="ellipsis-vertical-outline"></ion-icon></ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content page-home-content class="page-home-content padding" scroll="false" fullscreen>
+<ion-card [routerLink]="['/','rogam']">
+	<ion-card-content><ion-icon name="logo-firebase"></ion-icon> പ്രയാസങ്ങളില്‍</ion-card-content>
+</ion-card>
+<ion-card [routerLink]="['/','vasthram']">
+	<ion-card-content><ion-icon name="logo-firebase"></ion-icon> വസ്ത്രം  </ion-card-content>
+</ion-card>
+<ion-card [routerLink]="['/','vasthram']">
+	<ion-card-content><ion-icon name="logo-firebase"></ion-icon> വിസർജനം</ion-card-content>
+</ion-card>
+<ion-card [routerLink]="['/','vasthram']">
+	<ion-card-content><ion-icon name="logo-firebase"></ion-icon> അംഗശുദ്ധി</ion-card-content>
+</ion-card>
+<ion-card [routerLink]="['/','vasthram']">
+	<ion-card-content><ion-icon name="logo-firebase"></ion-icon> വീട്</ion-card-content>
+</ion-card>
+<ion-card [routerLink]="['/','vasthram']">
+	<ion-card-content><ion-icon name="logo-firebase"></ion-icon> നമസ്കാരം</ion-card-content>
+</ion-card>
+</ion-content>
+<ion-footer>
+	<ion-toolbar>
+		<ion-tabs>
+			<ion-tab-bar slot="bottom" color="light">
+				<ion-tab-button disabled="true"  [routerDirection]="'root'" [routerLink]="['/home']">
+					<ion-label color="primary">ദുആകൾ </ion-label>
+					<ion-icon color="primary" name="cloudy-night-sharp"></ion-icon>
+				</ion-tab-button>
+				<ion-tab-button  [routerDirection]="'root'" [routerLink]="['/faqs']">
+					<ion-label color="primary">About</ion-label>
+					<ion-icon color="primary" name="barcode-outline"></ion-icon>
+				</ion-tab-button>
+			</ion-tab-bar>
+		</ion-tabs>
+	</ion-toolbar>
+
+</ion-footer>
